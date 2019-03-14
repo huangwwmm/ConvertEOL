@@ -83,7 +83,7 @@ namespace ConvertEOL
                     if (convertedText != text)
                     {
                         convertedFileCount++;
-                        File.WriteAllText(iterFile.FullName, text);
+                        File.WriteAllText(iterFile.FullName, convertedText);
                         Console.WriteLine("Success converted file: " + iterFile.FullName);
                     }
                     else
